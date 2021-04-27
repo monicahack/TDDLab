@@ -56,7 +56,7 @@ test("amountDue is set based on an argument", function(){
   test("Returns false if cashTendered less than amountDue", function(){
     const changeHandler = new ChangeHandler(100)
     changeHandler.cashTendered = 80
-    expect(changeHandler.cashTendered >changeHandler.amountDue).toBe(false)
+    expect(changeHandler.cashTendered > changeHandler.amountDue).toBe(false)
   })
 
   test("Returns true if cashTendered equal to amountDue", function(){
